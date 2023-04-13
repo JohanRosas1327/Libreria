@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Libreria</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textloginbtn">Login</string>
+    <string name="textregisterbtn">Register</string>
+    <string name="User">Name User</string>
+    <string name="text_password">User Password</string>
+</resources>
