@@ -1,6 +1,7 @@
 package excersice.libreria.data;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -28,5 +29,55 @@ public class DAOLibreria extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+    }
+
+    public long savePersona(Persona persona) {
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+
+        return sqLiteDatabase.insert(
+                PersonaEntry.TABLE_NAME,
+                null,
+                persona.toContentValues());
+
+    }
+
+    public Cursor getAllPersonas() {
+        return getReadableDatabase()
+                .query(
+                        PersonaEntry.TABLE_NAME,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null);
+    }
+
+    public Cursor getPersonaById(String lawyerId) {
+        Cursor c = getReadableDatabase().query(
+                PersonaEntry.TABLE_NAME,
+                null,
+                PersonaEntry.ID + " LIKE ?",
+                new String[]{lawyerId},
+                null,
+                null,
+                null);
+        return c;
+    }
+
+    public int deletePersona(String lawyerId) {
+        return getWritableDatabase().delete(
+                PersonaEntry.TABLE_NAME,
+                PersonaEntry.ID + " LIKE ?",
+                new String[]{lawyerId});
+    }
+
+    public int updatePersona(Persona persona, String lawyerId) {
+        return getWritableDatabase().update(
+                PersonaEntry.TABLE_NAME,
+                persona.toContentValues(),
+                PersonaEntry.ID + " LIKE ?",
+                new String[]{lawyerId}
+        );
     }
 }

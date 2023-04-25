@@ -6,4 +6,7 @@
     <string name="textregisterbtn">Register</string>
     <string name="User">Name User</string>
     <string name="text_password">User Password</string>
+    <string name="idhint">id</string>
+    <string name="passwordHint">password</string>
+    <string name="nameEditText">Name</string>
 </resources>

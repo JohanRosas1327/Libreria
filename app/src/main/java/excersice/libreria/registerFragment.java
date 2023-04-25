@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+
+import excersice.libreria.data.DAOLibreria;
+import excersice.libreria.data.Persona;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +27,18 @@ public class registerFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private EditText id;
+    private EditText name;
+    private EditText password;
+    private DAOLibreria DAO = new DAOLibreria(this);
+
+    public void registrar(View v){
+        Persona personaaguardar = new Persona(
+                Integer.parseInt(id.getText().toString()),
+
+        );
+    }
 
     public registerFragment() {
         // Required empty public constructor

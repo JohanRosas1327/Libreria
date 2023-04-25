@@ -1,5 +1,9 @@
 package excersice.libreria.data;
 
+import android.content.ContentValues;
+import android.database.Cursor;
+import static excersice.libreria.data.PersonaContract.PersonaEntry;
+
 public class Persona {
     private int idPersona;
     private String nombrePersona;
@@ -9,7 +13,20 @@ public class Persona {
         this.idPersona = idPersona;
         this.nombrePersona = nombrePersona;
         this.passwordPersona = passwordPersona;
+    }
 
+    public Persona(Cursor cursor) {
+        idPersona = cursor.getInt(cursor.getColumnIndex(PersonaEntry.ID));
+        nombrePersona = cursor.getString(cursor.getColumnIndex(PersonaEntry.NAME));
+        passwordPersona = cursor.getString(cursor.getColumnIndex(PersonaEntry.PASSWORD));
+    }
+
+    public ContentValues toContentValues() {
+        ContentValues values = new ContentValues();
+        values.put(PersonaEntry.ID, idPersona);
+        values.put(PersonaEntry.NAME, nombrePersona);
+        values.put(PersonaEntry.PASSWORD, passwordPersona);
+        return values;
     }
 
     public int getIdPersona() {
