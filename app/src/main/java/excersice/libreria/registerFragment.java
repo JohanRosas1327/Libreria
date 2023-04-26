@@ -2,11 +2,14 @@ package excersice.libreria;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 import excersice.libreria.data.DAOLibreria;
@@ -28,17 +31,11 @@ public class registerFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    private Button btnRegistrar;
     private EditText id;
     private EditText name;
     private EditText password;
-    private DAOLibreria DAO = new DAOLibreria(this);
-
-    public void registrar(View v){
-        Persona personaaguardar = new Persona(
-                Integer.parseInt(id.getText().toString()),
-
-        );
-    }
+    private DAOLibreria DAO;
 
     public registerFragment() {
         // Required empty public constructor
@@ -76,5 +73,26 @@ public class registerFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_register, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        DAOLibreria DAO = new DAOLibreria(view.getContext());
+        id = (EditText) view.findViewById(R.id.editTextID);
+        name = (EditText) view.findViewById(R.id.editTextTextPersonName);
+        password = (EditText) view.findViewById(R.id.editTextTextPassword2);
+        btnRegistrar = (Button) view.findViewById(R.id.buttonregister2);
+        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Persona personaaguardar = new Persona(
+                        Integer.parseInt(id.getText().toString()),
+                        name.getText().toString(),
+                        password.getText().toString()
+                );
+                DAO.savePersona(personaaguardar);
+            }
+        });
+        super.onViewCreated(view, savedInstanceState);
     }
 }

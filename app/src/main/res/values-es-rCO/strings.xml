@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Libreria</string>
+    <string name="textloginbtn">Inicio de sesión</string>
+    <string name="textregisterbtn">Regístrese</string>
+    <string name="User">Nombre Usuario</string>
+    <string name="text_password">Contraseña de usuario</string>
+    <string name="passwordHint">Contraseña</string>
+    <string name="nameEditText">Nombre</string>
+</resources>

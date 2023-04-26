@@ -1,5 +1,6 @@
 package excersice.libreria.data;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.database.Cursor;
 import static excersice.libreria.data.PersonaContract.PersonaEntry;
@@ -15,6 +16,7 @@ public class Persona {
         this.passwordPersona = passwordPersona;
     }
 
+    @SuppressLint("Range")
     public Persona(Cursor cursor) {
         idPersona = cursor.getInt(cursor.getColumnIndex(PersonaEntry.ID));
         nombrePersona = cursor.getString(cursor.getColumnIndex(PersonaEntry.NAME));
