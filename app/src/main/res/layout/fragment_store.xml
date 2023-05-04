@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".storeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="127dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/_8b269461bc2b6a50ee8fba1a2596410"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="127dp"
+            android:layout_height="168dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/content_1"
+            tools:layout_editor_absoluteX="288dp"
+            tools:layout_editor_absoluteY="178dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="147dp"
+            android:layout_height="160dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/content__1__1"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="373dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="161dp"
+            android:layout_height="195dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/content__2_"
+            tools:layout_editor_absoluteX="254dp"
+            tools:layout_editor_absoluteY="530dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="149dp"
+            android:layout_height="40dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.641"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.111" />
+
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="123dp"
+            android:layout_height="50dp"
+            android:rotationX="0"
+            android:text="Store book"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="433dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="617dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
