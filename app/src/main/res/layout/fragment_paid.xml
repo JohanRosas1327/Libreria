@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
+    android:background="@android:color/holo_blue_light"
     tools:context=".paidFragment">
 
     <Button
@@ -94,9 +94,9 @@
     <TableRow
         android:layout_width="410dp"
         android:layout_height="50dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="254dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="254dp">
 
         <TextView
             android:id="@+id/textView13"
@@ -127,9 +127,9 @@
     <TableRow
         android:layout_width="412dp"
         android:layout_height="66dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="305dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="305dp">
 
         <TextView
             android:id="@+id/textView14"
@@ -154,9 +154,9 @@
         android:id="@+id/tableRow"
         android:layout_width="407dp"
         android:layout_height="52dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="372dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="372dp">
 
         <TextView
             android:id="@+id/textView15"
