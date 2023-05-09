@@ -7,4 +7,26 @@
     <string name="text_password">Contraseña de usuario</string>
     <string name="passwordHint">Contraseña</string>
     <string name="nameEditText">Nombre</string>
+    <string name="textView2">Personas registradas</string>
+    <string name="metodosPago">Métodos de Pago</string>
+    <string name="seleccionTarjeta">Selecciona tu tarjeta:</string>
+    <string name="credito">Crédito</string>
+    <string name="debito">Débito</string>
+    <string name="recomendacion">Recomiendas esta app?</string>
+    <string name="checkSi">Si</string>
+    <string name="promociones">Autorizas enviar promociones al correo?</string>
+    <string name="email">Escribe tu correo:</string>
+    <string name="sugerencias">Inquietudes o reclamos</string>
+    <string name="comprar">REALIZAR COMPRA</string>
+    <string name="preciosLibros">Precios de Libros</string>
+    <string name="precio1">Precio: 55.000</string>
+    <string name="precio2">Precio: 60.000</string>
+    <string name="precio3">Precio: 59.000</string>
+    <string name="autor1">Autor: Alex Libby</string>
+    <string name="autor2">Autor: David Karlins</string>
+    <string name="autor3">Autor: Markus Zusak</string>
+    <string name="envio1">Free shipping</string>
+    <string name="envio2">Shipping: 5,000</string>
+    <string name="no">No</string>
+    <string name="jmmm">Jmmm</string>
 </resources>

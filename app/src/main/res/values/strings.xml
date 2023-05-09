@@ -9,4 +9,33 @@
     <string name="idhint" translatable="false">ID</string>
     <string name="passwordHint">Password</string>
     <string name="nameEditText">Name</string>
+    <string name="textView2">Registered persons</string>
+    <string name="metodosPago">Payment Methods</string>
+    <string name="seleccionTarjeta">Select your card:</string>
+    <string name="credito">Credit</string>
+    <string name="debito">Debit</string>
+    <string name="recomendacion">Do you recommend this app?</string>
+    <string name="checkSi">Yes</string>
+    <string name="promociones">Do you authorize to send promotions to mail?</string>
+    <string name="email">Write your email:</string>
+    <string name="sugerencias">Concerns or complaints</string>
+    <string name="comprar">MAKE A PURCHASE</string>
+    <string name="preciosLibros">Book Prices</string>
+    <string name="precio1">Price: 55,000</string>
+    <string name="precio2">Price: 60,000</string>
+    <string name="precio3">Price: 59.000</string>
+    <string name="autor1">Author: Alex Libby</string>
+    <string name="autor2">Author: David Karlins</string>
+    <string name="autor3">Author: Markus Zusak</string>
+    <string name="envio1">Free shipping</string>
+    <string name="envio2">Shipping: 5,000</string>
+    <string name="imageLogin" translatable="false">LOGIN</string>
+    <string name="imagePass" translatable="false">PASSWORD</string>
+    <string name="imageUser" translatable="false">USER</string>
+    <string name="imageRegister" translatable="false">REGISTER</string>
+    <string name="imageLibro1" translatable="false">LIBRO1</string>
+    <string name="imageLibro2" translatable="false">LIBRO2</string>
+    <string name="imageLibro3" translatable="false">LIBRO3</string>
+    <string name="no">No</string>
+    <string name="jmmm">Jmmm</string>
 </resources>
