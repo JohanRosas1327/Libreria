@@ -2,18 +2,22 @@ package excersice.libreria;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link storeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class storeFragment extends Fragment {
+public class storeFragment extends Fragment implements View.OnClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,6 +27,9 @@ public class storeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private Button store;
+    private Button store1;
+    private Button store2;
 
     public storeFragment() {
         // Required empty public constructor
@@ -59,6 +66,31 @@ public class storeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_store, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        store = (Button) view.findViewById(R.id.button3);
+        store1 = (Button) view.findViewById(R.id.button5);
+        store2 = (Button) view.findViewById(R.id.button6);
+        store.setOnClickListener(this);
+        store1.setOnClickListener(this);
+        store2.setOnClickListener(this);
+        super.onViewCreated(view, savedInstanceState);
+    }
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.button3:
+                Navigation.findNavController(view).navigate(R.id.paidFragment);
+                break;
+            case R.id.button5:
+                Navigation.findNavController(view).navigate(R.id.paidFragment);
+                break;
+            case R.id.button6:
+                Navigation.findNavController(view).navigate(R.id.paidFragment);
+                break;
+        }
     }
 }

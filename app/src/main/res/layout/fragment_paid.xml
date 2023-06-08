@@ -14,10 +14,13 @@
         android:backgroundTint="@color/black"
         android:text="@string/comprar"
         android:textColor="#F4EFEF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteY="591dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -26,12 +29,12 @@
         android:text="@string/metodosPago"
         android:textColor="#0B0A0A"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037"
+        app:layout_constraintVertical_bias="0.023"
         tools:ignore="HardcodedText" />
 
     <ImageView
@@ -39,31 +42,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/descarga"
-        tools:ignore="ContentDescription,MissingConstraints"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/sugerencias"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.577"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.741"
         tools:ignore="Autofill,TouchTargetSizeCheck" />
 
     <TableRow
+        android:id="@+id/tableRow4"
         android:layout_width="404dp"
         android:layout_height="60dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="193dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView5"
@@ -93,11 +103,14 @@
     </TableRow>
 
     <TableRow
+        android:id="@+id/tableRow3"
         android:layout_width="410dp"
         android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="254dp">
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
             android:id="@+id/textView13"
@@ -127,11 +140,14 @@
     </TableRow>
 
     <TableRow
+        android:id="@+id/tableRow2"
         android:layout_width="412dp"
         android:layout_height="66dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="305dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textView14"
@@ -157,9 +173,11 @@
         android:id="@+id/tableRow"
         android:layout_width="407dp"
         android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="372dp">
+        tools:layout_editor_absoluteX="5dp">
 
         <TextView
             android:id="@+id/textView15"
@@ -172,10 +190,10 @@
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autofillHints=""
             android:ems="10"
             android:inputType="textEmailAddress"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
-            android:autofillHints="" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
